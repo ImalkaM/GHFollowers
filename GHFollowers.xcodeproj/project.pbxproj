@@ -16,6 +16,11 @@
 		ACCAAE5E2A35AB00002D260B /* GFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCAAE5D2A35AB00002D260B /* GFButton.swift */; };
 		ACCAAE602A35B159002D260B /* GFTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCAAE5F2A35B159002D260B /* GFTextfield.swift */; };
 		ACCAAE622A3B02A8002D260B /* FollowerListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCAAE612A3B02A8002D260B /* FollowerListVC.swift */; };
+		ACCAAE642A3B465E002D260B /* GFTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCAAE632A3B465E002D260B /* GFTitleLabel.swift */; };
+		ACCAAE662A3B48D7002D260B /* GFBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCAAE652A3B48D7002D260B /* GFBodyLabel.swift */; };
+		ACCAAE682A3B49A9002D260B /* GFAlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCAAE672A3B49A9002D260B /* GFAlertVC.swift */; };
+		ACCAAE6A2A3B539C002D260B /* GFAlertContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCAAE692A3B539C002D260B /* GFAlertContainerView.swift */; };
+		ACCAAE6C2A3D9798002D260B /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCAAE6B2A3D9798002D260B /* UIViewController+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +35,11 @@
 		ACCAAE5D2A35AB00002D260B /* GFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFButton.swift; sourceTree = "<group>"; };
 		ACCAAE5F2A35B159002D260B /* GFTextfield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTextfield.swift; sourceTree = "<group>"; };
 		ACCAAE612A3B02A8002D260B /* FollowerListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListVC.swift; sourceTree = "<group>"; };
+		ACCAAE632A3B465E002D260B /* GFTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTitleLabel.swift; sourceTree = "<group>"; };
+		ACCAAE652A3B48D7002D260B /* GFBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFBodyLabel.swift; sourceTree = "<group>"; };
+		ACCAAE672A3B49A9002D260B /* GFAlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAlertVC.swift; sourceTree = "<group>"; };
+		ACCAAE692A3B539C002D260B /* GFAlertContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAlertContainerView.swift; sourceTree = "<group>"; };
+		ACCAAE6B2A3D9798002D260B /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +82,11 @@
 				ACCAAE5D2A35AB00002D260B /* GFButton.swift */,
 				ACCAAE5F2A35B159002D260B /* GFTextfield.swift */,
 				ACCAAE612A3B02A8002D260B /* FollowerListVC.swift */,
+				ACCAAE632A3B465E002D260B /* GFTitleLabel.swift */,
+				ACCAAE652A3B48D7002D260B /* GFBodyLabel.swift */,
+				ACCAAE672A3B49A9002D260B /* GFAlertVC.swift */,
+				ACCAAE692A3B539C002D260B /* GFAlertContainerView.swift */,
+				ACCAAE6B2A3D9798002D260B /* UIViewController+Ext.swift */,
 			);
 			path = GHFollowers;
 			sourceTree = "<group>";
@@ -148,11 +163,16 @@
 			files = (
 				ACCAAE602A35B159002D260B /* GFTextfield.swift in Sources */,
 				ACCAAE5C2A34E03A002D260B /* FavoriteListVC.swift in Sources */,
+				ACCAAE6C2A3D9798002D260B /* UIViewController+Ext.swift in Sources */,
 				ACCAAE5E2A35AB00002D260B /* GFButton.swift in Sources */,
 				ACCAAE5A2A34DFE4002D260B /* SearchVC.swift in Sources */,
+				ACCAAE682A3B49A9002D260B /* GFAlertVC.swift in Sources */,
+				ACCAAE662A3B48D7002D260B /* GFBodyLabel.swift in Sources */,
+				ACCAAE642A3B465E002D260B /* GFTitleLabel.swift in Sources */,
 				ACCAAE622A3B02A8002D260B /* FollowerListVC.swift in Sources */,
 				ACCAAE442A34B897002D260B /* AppDelegate.swift in Sources */,
 				ACCAAE462A34B897002D260B /* SceneDelegate.swift in Sources */,
+				ACCAAE6A2A3B539C002D260B /* GFAlertContainerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
