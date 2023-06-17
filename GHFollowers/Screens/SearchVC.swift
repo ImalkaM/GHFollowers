@@ -31,7 +31,7 @@ class SearchVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        navigationController?.isNavigationBarHidden = true
+        navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
     func createDismissKeyboardTapGesture(){
@@ -42,7 +42,7 @@ class SearchVC: UIViewController {
     @objc func pushFollowerListVC(){
         
         guard isUserNameEntered else {
-            presentGFAlertOnMainThread(title: "Empty Username", message: "Please enter username, we need to know who to look for 😘", buttonTitle: "Ok")
+            presentGFAlertOnMainThread(title: "Empty Username", message: "Please enter username, we need to know who to look for", buttonTitle: "Ok")
             return
         }
         
@@ -69,6 +69,7 @@ class SearchVC: UIViewController {
     func configureTextField(){
         view.addSubview(userNameTextField)
         userNameTextField.delegate = self
+        userNameTextField.text = "SAllen0400"
         NSLayoutConstraint.activate([
             userNameTextField.topAnchor.constraint(equalTo: logoImage.bottomAnchor, constant: 48),
             userNameTextField.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50),
