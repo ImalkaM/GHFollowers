@@ -24,6 +24,7 @@
 		ACCAAE732A3DBF51002D260B /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCAAE722A3DBF51002D260B /* Follower.swift */; };
 		ACCAAE752A3DBFA8002D260B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCAAE742A3DBFA8002D260B /* User.swift */; };
 		ACCAAE782A3DDE69002D260B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCAAE772A3DDE69002D260B /* NetworkManager.swift */; };
+		ACCAAE7B2A3DFD3A002D260B /* GFErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCAAE7A2A3DFD3A002D260B /* GFErrorMessage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		ACCAAE722A3DBF51002D260B /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
 		ACCAAE742A3DBFA8002D260B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		ACCAAE772A3DDE69002D260B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		ACCAAE7A2A3DFD3A002D260B /* GFErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFErrorMessage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		ACCAAE372A34B897002D260B = {
 			isa = PBXGroup;
 			children = (
+				ACCAAE792A3DFD24002D260B /* Utilities */,
 				ACCAAE422A34B897002D260B /* GHFollowers */,
 				ACCAAE412A34B897002D260B /* Products */,
 			);
@@ -148,6 +151,14 @@
 			path = Managers;
 			sourceTree = "<group>";
 		};
+		ACCAAE792A3DFD24002D260B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				ACCAAE7A2A3DFD3A002D260B /* GFErrorMessage.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -230,6 +241,7 @@
 				ACCAAE642A3B465E002D260B /* GFTitleLabel.swift in Sources */,
 				ACCAAE622A3B02A8002D260B /* FollowerListVC.swift in Sources */,
 				ACCAAE442A34B897002D260B /* AppDelegate.swift in Sources */,
+				ACCAAE7B2A3DFD3A002D260B /* GFErrorMessage.swift in Sources */,
 				ACCAAE782A3DDE69002D260B /* NetworkManager.swift in Sources */,
 				ACCAAE462A34B897002D260B /* SceneDelegate.swift in Sources */,
 				ACCAAE6A2A3B539C002D260B /* GFAlertContainerView.swift in Sources */,
