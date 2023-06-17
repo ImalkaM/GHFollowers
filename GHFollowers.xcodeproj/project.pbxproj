@@ -72,23 +72,55 @@
 		ACCAAE422A34B897002D260B /* GHFollowers */ = {
 			isa = PBXGroup;
 			children = (
+				ACCAAE702A3DA2D1002D260B /* Support */,
+				ACCAAE6F2A3DA2A8002D260B /* Custom Views */,
+				ACCAAE6E2A3DA297002D260B /* Extensions */,
+				ACCAAE6D2A3DA280002D260B /* Screens */,
+				ACCAAE512A34B898002D260B /* Info.plist */,
+			);
+			path = GHFollowers;
+			sourceTree = "<group>";
+		};
+		ACCAAE6D2A3DA280002D260B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				ACCAAE592A34DFE4002D260B /* SearchVC.swift */,
+				ACCAAE5B2A34E03A002D260B /* FavoriteListVC.swift */,
+				ACCAAE612A3B02A8002D260B /* FollowerListVC.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		ACCAAE6E2A3DA297002D260B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				ACCAAE6B2A3D9798002D260B /* UIViewController+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		ACCAAE6F2A3DA2A8002D260B /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				ACCAAE672A3B49A9002D260B /* GFAlertVC.swift */,
+				ACCAAE5D2A35AB00002D260B /* GFButton.swift */,
+				ACCAAE5F2A35B159002D260B /* GFTextfield.swift */,
+				ACCAAE632A3B465E002D260B /* GFTitleLabel.swift */,
+				ACCAAE652A3B48D7002D260B /* GFBodyLabel.swift */,
+				ACCAAE692A3B539C002D260B /* GFAlertContainerView.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		ACCAAE702A3DA2D1002D260B /* Support */ = {
+			isa = PBXGroup;
+			children = (
 				ACCAAE432A34B897002D260B /* AppDelegate.swift */,
 				ACCAAE452A34B897002D260B /* SceneDelegate.swift */,
 				ACCAAE4C2A34B898002D260B /* Assets.xcassets */,
 				ACCAAE4E2A34B898002D260B /* LaunchScreen.storyboard */,
-				ACCAAE512A34B898002D260B /* Info.plist */,
-				ACCAAE592A34DFE4002D260B /* SearchVC.swift */,
-				ACCAAE5B2A34E03A002D260B /* FavoriteListVC.swift */,
-				ACCAAE5D2A35AB00002D260B /* GFButton.swift */,
-				ACCAAE5F2A35B159002D260B /* GFTextfield.swift */,
-				ACCAAE612A3B02A8002D260B /* FollowerListVC.swift */,
-				ACCAAE632A3B465E002D260B /* GFTitleLabel.swift */,
-				ACCAAE652A3B48D7002D260B /* GFBodyLabel.swift */,
-				ACCAAE672A3B49A9002D260B /* GFAlertVC.swift */,
-				ACCAAE692A3B539C002D260B /* GFAlertContainerView.swift */,
-				ACCAAE6B2A3D9798002D260B /* UIViewController+Ext.swift */,
 			);
-			path = GHFollowers;
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
