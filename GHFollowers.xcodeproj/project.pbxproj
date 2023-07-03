@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC6CA1832A51D95400D13422 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6CA1822A51D95400D13422 /* UIHelper.swift */; };
 		ACCAAE442A34B897002D260B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCAAE432A34B897002D260B /* AppDelegate.swift */; };
 		ACCAAE462A34B897002D260B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCAAE452A34B897002D260B /* SceneDelegate.swift */; };
 		ACCAAE4D2A34B898002D260B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACCAAE4C2A34B898002D260B /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC6CA1822A51D95400D13422 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		ACCAAE402A34B897002D260B /* GHFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACCAAE432A34B897002D260B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACCAAE452A34B897002D260B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				ACCAAE7A2A3DFD3A002D260B /* GFErrorMessage.swift */,
+				AC6CA1822A51D95400D13422 /* UIHelper.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 				ACCAAE622A3B02A8002D260B /* FollowerListVC.swift in Sources */,
 				ACCAAE442A34B897002D260B /* AppDelegate.swift in Sources */,
 				ACCAAE7B2A3DFD3A002D260B /* GFErrorMessage.swift in Sources */,
+				AC6CA1832A51D95400D13422 /* UIHelper.swift in Sources */,
 				ACCAAE782A3DDE69002D260B /* NetworkManager.swift in Sources */,
 				ACCAAE462A34B897002D260B /* SceneDelegate.swift in Sources */,
 				ACCAAE6A2A3B539C002D260B /* GFAlertContainerView.swift in Sources */,
