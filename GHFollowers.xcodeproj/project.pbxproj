@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AC6CA1832A51D95400D13422 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6CA1822A51D95400D13422 /* UIHelper.swift */; };
+		AC6CA18A2A59A03E00D13422 /* GFEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6CA1892A59A03E00D13422 /* GFEmptyStateView.swift */; };
 		ACCAAE442A34B897002D260B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCAAE432A34B897002D260B /* AppDelegate.swift */; };
 		ACCAAE462A34B897002D260B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCAAE452A34B897002D260B /* SceneDelegate.swift */; };
 		ACCAAE4D2A34B898002D260B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACCAAE4C2A34B898002D260B /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		AC6CA1822A51D95400D13422 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		AC6CA1892A59A03E00D13422 /* GFEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFEmptyStateView.swift; sourceTree = "<group>"; };
 		ACCAAE402A34B897002D260B /* GHFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACCAAE432A34B897002D260B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACCAAE452A34B897002D260B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +69,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC6CA1842A599FA900D13422 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				ACCAAE5D2A35AB00002D260B /* GFButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		AC6CA1852A599FB000D13422 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				ACEFFFFC2A43356E009826A6 /* GFAvatarImageView.swift */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		AC6CA1862A599FB800D13422 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ACCAAE692A3B539C002D260B /* GFAlertContainerView.swift */,
+				ACCAAE672A3B49A9002D260B /* GFAlertVC.swift */,
+				AC6CA1892A59A03E00D13422 /* GFEmptyStateView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AC6CA1872A599FC200D13422 /* TextFields */ = {
+			isa = PBXGroup;
+			children = (
+				ACCAAE5F2A35B159002D260B /* GFTextfield.swift */,
+			);
+			path = TextFields;
+			sourceTree = "<group>";
+		};
+		AC6CA1882A599FE000D13422 /* Labels */ = {
+			isa = PBXGroup;
+			children = (
+				ACCAAE632A3B465E002D260B /* GFTitleLabel.swift */,
+				ACCAAE652A3B48D7002D260B /* GFBodyLabel.swift */,
+			);
+			path = Labels;
+			sourceTree = "<group>";
+		};
 		ACCAAE372A34B897002D260B = {
 			isa = PBXGroup;
 			children = (
@@ -119,14 +164,12 @@
 		ACCAAE6F2A3DA2A8002D260B /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				AC6CA1882A599FE000D13422 /* Labels */,
+				AC6CA1872A599FC200D13422 /* TextFields */,
+				AC6CA1862A599FB800D13422 /* Views */,
+				AC6CA1852A599FB000D13422 /* Images */,
+				AC6CA1842A599FA900D13422 /* Buttons */,
 				ACEFFFF92A433459009826A6 /* Cells */,
-				ACCAAE672A3B49A9002D260B /* GFAlertVC.swift */,
-				ACCAAE5D2A35AB00002D260B /* GFButton.swift */,
-				ACCAAE5F2A35B159002D260B /* GFTextfield.swift */,
-				ACCAAE632A3B465E002D260B /* GFTitleLabel.swift */,
-				ACCAAE652A3B48D7002D260B /* GFBodyLabel.swift */,
-				ACCAAE692A3B539C002D260B /* GFAlertContainerView.swift */,
-				ACEFFFFC2A43356E009826A6 /* GFAvatarImageView.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -251,6 +294,7 @@
 				ACCAAE6C2A3D9798002D260B /* UIViewController+Ext.swift in Sources */,
 				ACCAAE5E2A35AB00002D260B /* GFButton.swift in Sources */,
 				ACCAAE5A2A34DFE4002D260B /* SearchVC.swift in Sources */,
+				AC6CA18A2A59A03E00D13422 /* GFEmptyStateView.swift in Sources */,
 				ACCAAE682A3B49A9002D260B /* GFAlertVC.swift in Sources */,
 				ACCAAE752A3DBFA8002D260B /* User.swift in Sources */,
 				ACEFFFFB2A43348A009826A6 /* FollowerCell.swift in Sources */,
