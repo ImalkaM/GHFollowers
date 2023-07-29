@@ -29,6 +29,7 @@
 		ACCAAE7B2A3DFD3A002D260B /* GFErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCAAE7A2A3DFD3A002D260B /* GFErrorMessage.swift */; };
 		ACEFFFFB2A43348A009826A6 /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFFFFA2A43348A009826A6 /* FollowerCell.swift */; };
 		ACEFFFFD2A43356E009826A6 /* GFAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFFFFC2A43356E009826A6 /* GFAvatarImageView.swift */; };
+		ACF523672A6D15B900EBBD38 /* UserInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF523662A6D15B900EBBD38 /* UserInfoVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		ACCAAE7A2A3DFD3A002D260B /* GFErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFErrorMessage.swift; sourceTree = "<group>"; };
 		ACEFFFFA2A43348A009826A6 /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
 		ACEFFFFC2A43356E009826A6 /* GFAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAvatarImageView.swift; sourceTree = "<group>"; };
+		ACF523662A6D15B900EBBD38 /* UserInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 				ACCAAE592A34DFE4002D260B /* SearchVC.swift */,
 				ACCAAE5B2A34E03A002D260B /* FavoriteListVC.swift */,
 				ACCAAE612A3B02A8002D260B /* FollowerListVC.swift */,
+				ACF523662A6D15B900EBBD38 /* UserInfoVC.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				ACEFFFFB2A43348A009826A6 /* FollowerCell.swift in Sources */,
 				ACEFFFFD2A43356E009826A6 /* GFAvatarImageView.swift in Sources */,
 				ACCAAE662A3B48D7002D260B /* GFBodyLabel.swift in Sources */,
+				ACF523672A6D15B900EBBD38 /* UserInfoVC.swift in Sources */,
 				ACCAAE732A3DBF51002D260B /* Follower.swift in Sources */,
 				ACCAAE642A3B465E002D260B /* GFTitleLabel.swift in Sources */,
 				ACCAAE622A3B02A8002D260B /* FollowerListVC.swift in Sources */,
