@@ -9,43 +9,64 @@ import UIKit
 
 class UserInfoVC: UIViewController {
     
-    let headerView = UIView()
-    let itemViewOne = UIView()
-    let itemViewTwo = UIView()
+    let headerView          = UIView()
+    let itemViewOne         = UIView()
+    let itemViewTwo         = UIView()
+    var itemViews: [UIView] = []
     
-    var itemViews:[UIView] = []
-    
-    var userName:String!
+    var username: String!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        configureVC()
+        configureViewController()
         layoutUI()
         getUserInfo()
-    
     }
     
-    func layoutUI(){
-        itemViews = [headerView,itemViewOne,itemViewTwo]
+    
+    func configureViewController() {
+        view.backgroundColor = .systemBackground
+        let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(dismssVC))
+        navigationItem.rightBarButtonItem = doneButton
+    }
+    
+    
+    func getUserInfo() {
+        NetworkManager.shared.getUserInfo(for: username) { [weak self] result in
+            guard let self = self else { return }
+            
+            switch result {
+            case .success(let user):
+                DispatchQueue.main.async {
+                    print(user)
+                    self.add(childVC: GFUserinfoHeaderVC(user: user), to: self.headerView)
+                    self.add(childVC: GFRepoItemVC(user: user), to: self.itemViewOne)
+                    self.add(childVC: GFFollowerItemVC(user: user), to: self.itemViewTwo)
+                }
+                
+            case .failure(let error):
+                self.presentGFAlertOnMainThread(title: "Something went wrong", message: error.rawValue, buttonTitle: "Ok")
+            }
+        }
+    }
+    
+    
+    func layoutUI() {
+        let padding: CGFloat    = 20
+        let itemHeight: CGFloat = 140
         
-        let padding:CGFloat = 20
-        let itemHeight:CGFloat = 140
+        itemViews = [headerView, itemViewOne, itemViewTwo]
         
-        
-        //refactor using for loog UI constraints
-        for item in itemViews{
-            view.addSubview(item)
-            item.translatesAutoresizingMaskIntoConstraints = false
+        for itemView in itemViews {
+            view.addSubview(itemView)
+            itemView.translatesAutoresizingMaskIntoConstraints = false
             
             NSLayoutConstraint.activate([
-                item.leadingAnchor.constraint(equalTo: view.leadingAnchor,constant: padding),
-                item.trailingAnchor.constraint(equalTo: view.trailingAnchor,constant: -padding),
+                itemView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: padding),
+                itemView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -padding)
             ])
         }
-        
-        itemViewOne.backgroundColor = .systemPink
-        itemViewTwo.backgroundColor = .systemBlue
         
         NSLayoutConstraint.activate([
             headerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
@@ -56,39 +77,20 @@ class UserInfoVC: UIViewController {
             
             itemViewTwo.topAnchor.constraint(equalTo: itemViewOne.bottomAnchor, constant: padding),
             itemViewTwo.heightAnchor.constraint(equalToConstant: itemHeight)
-            
         ])
     }
     
-    private func configureVC(){
-        view.backgroundColor = .systemBackground
-        let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(dismissVC))
-        navigationItem.rightBarButtonItem = doneButton
-    }
     
-    private func getUserInfo(){
-        NetworkManager.shared.getUserInfo(for: userName) { [weak self] result in
-            guard let self = self else {return}
-            
-            switch result{
-            case .success(let user):
-                DispatchQueue.main.async {
-                    self.add(childVC: GFUserinfoHeaderVC(user: user), to: self.headerView)
-                }
-            case .failure(let error):
-                self.presentGFAlertOnMainThread(title: "Something went wrong", message: error.rawValue, buttonTitle: "Ok")
-            }
-        }
-    }
-    
-    private func add(childVC:UIViewController,to containerView:UIView){
+    func add(childVC: UIViewController, to containerView: UIView) {
         addChild(childVC)
         containerView.addSubview(childVC.view)
         childVC.view.frame = containerView.bounds
         childVC.didMove(toParent: self)
     }
     
-    @objc private func dismissVC(){
+    
+    @objc func dismssVC() {
         dismiss(animated: true)
     }
 }
+

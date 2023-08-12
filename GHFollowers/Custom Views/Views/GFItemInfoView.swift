@@ -37,7 +37,7 @@ class GFItemInfoView: UIView {
         
         NSLayoutConstraint.activate([
             symbolImageView.topAnchor.constraint(equalTo: self.topAnchor),
-            symbolImageView.leadingAnchor.constraint(equalTo: self.leftAnchor),
+            symbolImageView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
             symbolImageView.widthAnchor.constraint(equalToConstant: 20),
             symbolImageView.heightAnchor.constraint(equalToConstant: 20),
             
@@ -47,12 +47,10 @@ class GFItemInfoView: UIView {
             titleLabel.heightAnchor.constraint(equalToConstant: 18),
             
             countLabel.topAnchor.constraint(equalTo: symbolImageView.bottomAnchor, constant: 4),
-            countLabel.leadingAnchor.constraint(equalTo: leadingAnchor),
+            countLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor),
             countLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor),
             countLabel.heightAnchor.constraint(equalToConstant: 18)
-            
         ])
-        
     }
     
     func set(itemInfoType:ItemInfoType,with count:Int){
