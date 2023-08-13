@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SafariServices
 
 fileprivate var containerView:UIView!
 
@@ -41,6 +42,12 @@ extension UIViewController{
         
         activityIndicator.startAnimating()
        
+    }
+    
+    func presentSafariVC(with url:URL){
+        let saffariVC = SFSafariViewController(url: url)
+        saffariVC.preferredControlTintColor = .systemGreen
+        present(saffariVC, animated: true)
     }
     
     func dismissLoadingView(){
