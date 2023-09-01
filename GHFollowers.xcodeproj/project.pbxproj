@@ -28,6 +28,7 @@
 		ACCAAE782A3DDE69002D260B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCAAE772A3DDE69002D260B /* NetworkManager.swift */; };
 		ACCAAE7B2A3DFD3A002D260B /* GFErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACCAAE7A2A3DFD3A002D260B /* GFErrorMessage.swift */; };
 		ACDBA5A42A99C617008B5507 /* FavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDBA5A32A99C617008B5507 /* FavoriteCell.swift */; };
+		ACDBA5A92A9F067F008B5507 /* GFTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDBA5A82A9F067F008B5507 /* GFTabBarController.swift */; };
 		ACEFFFFB2A43348A009826A6 /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFFFFA2A43348A009826A6 /* FollowerCell.swift */; };
 		ACEFFFFD2A43356E009826A6 /* GFAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACEFFFFC2A43356E009826A6 /* GFAvatarImageView.swift */; };
 		ACF523672A6D15B900EBBD38 /* UserInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF523662A6D15B900EBBD38 /* UserInfoVC.swift */; };
@@ -67,6 +68,7 @@
 		ACCAAE772A3DDE69002D260B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		ACCAAE7A2A3DFD3A002D260B /* GFErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFErrorMessage.swift; sourceTree = "<group>"; };
 		ACDBA5A32A99C617008B5507 /* FavoriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCell.swift; sourceTree = "<group>"; };
+		ACDBA5A82A9F067F008B5507 /* GFTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTabBarController.swift; sourceTree = "<group>"; };
 		ACEFFFFA2A43348A009826A6 /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
 		ACEFFFFC2A43356E009826A6 /* GFAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAvatarImageView.swift; sourceTree = "<group>"; };
 		ACF523662A6D15B900EBBD38 /* UserInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoVC.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 		ACCAAE6F2A3DA2A8002D260B /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				ACDBA5A52A9F056F008B5507 /* TabBarControllers */,
 				ACF523682A74F11B00EBBD38 /* ViewControllers */,
 				AC6CA1882A599FE000D13422 /* Labels */,
 				AC6CA1872A599FC200D13422 /* TextFields */,
@@ -240,6 +243,14 @@
 				ACF5236D2A7515AA00EBBD38 /* Constants.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		ACDBA5A52A9F056F008B5507 /* TabBarControllers */ = {
+			isa = PBXGroup;
+			children = (
+				ACDBA5A82A9F067F008B5507 /* GFTabBarController.swift */,
+			);
+			path = TabBarControllers;
 			sourceTree = "<group>";
 		};
 		ACEFFFF92A433459009826A6 /* Cells */ = {
@@ -373,6 +384,7 @@
 				ACF523702A76A59800EBBD38 /* GFItemInfoView.swift in Sources */,
 				ACCAAE6A2A3B539C002D260B /* GFAlertContainerView.swift in Sources */,
 				ACF5236E2A7515AA00EBBD38 /* Constants.swift in Sources */,
+				ACDBA5A92A9F067F008B5507 /* GFTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

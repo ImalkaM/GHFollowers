@@ -35,6 +35,7 @@ class GFTextfield: UITextField {
         
         backgroundColor           = .tertiarySystemBackground
         autocorrectionType        = .no
+        clearButtonMode           = .whileEditing
         placeholder               = "Enter a Username"
         
     }
