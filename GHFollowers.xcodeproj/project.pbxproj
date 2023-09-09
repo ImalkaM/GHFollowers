@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC35103C2AAC58B8007E3872 /* UIView+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC35103B2AAC58B8007E3872 /* UIView+EXT.swift */; };
 		AC6CA1832A51D95400D13422 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6CA1822A51D95400D13422 /* UIHelper.swift */; };
 		AC6CA18A2A59A03E00D13422 /* GFEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6CA1892A59A03E00D13422 /* GFEmptyStateView.swift */; };
 		ACC45D872AA1F17F00D1F97F /* GFDataLoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC45D862AA1F17F00D1F97F /* GFDataLoadingVC.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC35103B2AAC58B8007E3872 /* UIView+EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+EXT.swift"; sourceTree = "<group>"; };
 		AC6CA1822A51D95400D13422 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		AC6CA1892A59A03E00D13422 /* GFEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFEmptyStateView.swift; sourceTree = "<group>"; };
 		ACC45D862AA1F17F00D1F97F /* GFDataLoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFDataLoadingVC.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 				ACCAAE6B2A3D9798002D260B /* UIViewController+Ext.swift */,
 				ACF523782A8770BC00EBBD38 /* Date+Ext.swift */,
 				ACF5237A2A8770F600EBBD38 /* String+Ext.swift */,
+				AC35103B2AAC58B8007E3872 /* UIView+EXT.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 				ACCAAE642A3B465E002D260B /* GFTitleLabel.swift in Sources */,
 				ACF5237B2A8770F600EBBD38 /* String+Ext.swift in Sources */,
 				ACCAAE622A3B02A8002D260B /* FollowerListVC.swift in Sources */,
+				AC35103C2AAC58B8007E3872 /* UIView+EXT.swift in Sources */,
 				ACCAAE442A34B897002D260B /* AppDelegate.swift in Sources */,
 				ACF523722A7F875D00EBBD38 /* GFItemInfoVC.swift in Sources */,
 				ACCAAE7B2A3DFD3A002D260B /* GFErrorMessage.swift in Sources */,
