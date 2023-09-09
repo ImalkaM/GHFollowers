@@ -7,7 +7,7 @@
 
 import UIKit
 
-class UIHelper{
+enum UIHelper{
     static func createThreeColumnFlowLayout(in view:UIView) -> UICollectionViewFlowLayout{
         
         //calculate available width for a single object
