@@ -7,10 +7,6 @@
 
 import UIKit
 
-protocol FollowerListVCDelegate:AnyObject{
-    func didRequestFollowers(for username:String)
-}
-
 class FollowerListVC: GFDataLoadingVC {
     
     enum Section{
@@ -155,7 +151,7 @@ extension FollowerListVC: UICollectionViewDelegate{
         let contentHeight = scrollView.contentSize.height
         let height = scrollView.frame.size.height
      
-        
+        //pagination, retreive more followers.
         if offsetY > contentHeight - height{
             guard hasMoreFollowers, !isLoadingMoreFollowers else{return}
             page += 1
@@ -192,7 +188,7 @@ extension FollowerListVC:UISearchResultsUpdating{
 }
 
 
-extension FollowerListVC:FollowerListVCDelegate{
+extension FollowerListVC:UserInfoVCDelegate{
     func didRequestFollowers(for username: String) {
         self.username = username
         self.title = username
