@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AC35103C2AAC58B8007E3872 /* UIView+EXT.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC35103B2AAC58B8007E3872 /* UIView+EXT.swift */; };
+		AC55350B2ACC3EC600A8985B /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC55350A2ACC3EC600A8985B /* UITableView+Ext.swift */; };
 		AC6CA1832A51D95400D13422 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6CA1822A51D95400D13422 /* UIHelper.swift */; };
 		AC6CA18A2A59A03E00D13422 /* GFEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6CA1892A59A03E00D13422 /* GFEmptyStateView.swift */; };
 		ACC45D872AA1F17F00D1F97F /* GFDataLoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC45D862AA1F17F00D1F97F /* GFDataLoadingVC.swift */; };
@@ -48,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		AC35103B2AAC58B8007E3872 /* UIView+EXT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+EXT.swift"; sourceTree = "<group>"; };
+		AC55350A2ACC3EC600A8985B /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
 		AC6CA1822A51D95400D13422 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		AC6CA1892A59A03E00D13422 /* GFEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFEmptyStateView.swift; sourceTree = "<group>"; };
 		ACC45D862AA1F17F00D1F97F /* GFDataLoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFDataLoadingVC.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				ACF523782A8770BC00EBBD38 /* Date+Ext.swift */,
 				ACF5237A2A8770F600EBBD38 /* String+Ext.swift */,
 				AC35103B2AAC58B8007E3872 /* UIView+EXT.swift */,
+				AC55350A2ACC3EC600A8985B /* UITableView+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 				ACF523672A6D15B900EBBD38 /* UserInfoVC.swift in Sources */,
 				ACCAAE732A3DBF51002D260B /* Follower.swift in Sources */,
 				ACCAAE642A3B465E002D260B /* GFTitleLabel.swift in Sources */,
+				AC55350B2ACC3EC600A8985B /* UITableView+Ext.swift in Sources */,
 				ACF5237B2A8770F600EBBD38 /* String+Ext.swift in Sources */,
 				ACCAAE622A3B02A8002D260B /* FollowerListVC.swift in Sources */,
 				AC35103C2AAC58B8007E3872 /* UIView+EXT.swift in Sources */,

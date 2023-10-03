@@ -21,19 +21,18 @@ enum PersistenceManager{
     static func updateWith(favorite:Follower,actionType:persistenceActionType,completed: @escaping(GFErrorMessage?) -> Void){
         retrieveFavourites { result in
             switch result{
-            case .success(let favorites):
-                var retreivedFavorites = favorites
+            case .success(var favorites):
                 switch actionType{
                 case .add:
-                    guard !retreivedFavorites.contains(favorite) else {
+                    guard !favorites.contains(favorite) else {
                         completed(.alreadyInFavorites)
                         return
                     }
-                    retreivedFavorites.append(favorite)
+                    favorites.append(favorite)
                 case .remove:
-                    retreivedFavorites.removeAll { $0.login == favorite.login }
+                    favorites.removeAll { $0.login == favorite.login }
                 }
-                completed(save(favourites: retreivedFavorites))
+                completed(save(favourites: favorites))
             case .failure(let error):
                 completed(error)
             }
