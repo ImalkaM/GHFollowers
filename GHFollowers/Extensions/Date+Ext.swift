@@ -12,6 +12,7 @@ enum DateFormat:String{
 }
 
 extension Date{
+    
     func convertToStringFormat(with format:DateFormat) -> String{
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = format.rawValue

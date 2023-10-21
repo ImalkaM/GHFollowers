@@ -8,8 +8,8 @@
 import UIKit
 
 enum UIHelper{
+    
     static func createThreeColumnFlowLayout(in view:UIView) -> UICollectionViewFlowLayout{
-        
         //calculate available width for a single object
         let width = view.bounds.width
         let padding:CGFloat = 12

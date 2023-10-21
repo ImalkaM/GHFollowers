@@ -16,6 +16,7 @@ class GFItemInfoVC: UIViewController {
     
     var user: User!
     
+    
     init(user: User) {
         super.init(nibName: nil, bundle: nil)
         self.user = user
@@ -50,11 +51,14 @@ class GFItemInfoVC: UIViewController {
         stackView.addArrangedSubview(itemInfoViewTwo)
     }
     
+    
     private func setupActionButton(){
         actionButton.addTarget(self, action: #selector(actionButtonTapped), for: .touchUpInside)
     }
     
+    
     @objc func actionButtonTapped(){}
+    
     
     private func layoutUI() {
         view.addSubviews(stackView, actionButton)
