@@ -9,13 +9,18 @@ import UIKit
 import SafariServices
 
 extension UIViewController{
-    func presentGFAlertOnMainThread(title:String,message:String,buttonTitle:String){
-        DispatchQueue.main.async {
+    func presentGFAlert(title:String,message:String,buttonTitle:String){
             let alertVC = GFAlertVC(alertTitle: title, message: message, buttonTitle: buttonTitle)
             alertVC.modalPresentationStyle = .overFullScreen
             alertVC.modalTransitionStyle = .crossDissolve
-            self.present(alertVC, animated: true)
-        }
+            present(alertVC, animated: true)
+    }
+    
+    func presentDefaultGFAlert(){
+            let alertVC = GFAlertVC(alertTitle: "Something Went Wrong", message: "We were unable to complete the task at this moment,Please try agaian later.", buttonTitle: "Ok")
+            alertVC.modalPresentationStyle = .overFullScreen
+            alertVC.modalTransitionStyle = .crossDissolve
+            present(alertVC, animated: true)
     }
     
     func presentSafariVC(with url:URL){

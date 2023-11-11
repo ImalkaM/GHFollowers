@@ -42,18 +42,29 @@ class UserInfoVC: UIViewController {
     
     
     func getUserInfo() {
-        NetworkManager.shared.getUserInfo(for: username) { [weak self] result in
-            guard let self = self else { return }
-            
-            switch result {
-            case .success(let user):
-                DispatchQueue.main.async {
-                    self.configureUIElements(with: user)
+        
+        Task{
+            do{
+                let user = try await NetworkManager.shared.getUserInfo(for: username)
+                configureUIElements(with: user)
+            }catch{
+                if let error = error as? GFErrorMessage{
+                    presentGFAlert(title: "Something went wrong", message: error.rawValue, buttonTitle: "Ok")
                 }
-            case .failure(let error):
-                self.presentGFAlertOnMainThread(title: "Something went wrong", message: error.rawValue, buttonTitle: "Ok")
             }
         }
+//        NetworkManager.shared.getUserInfo(for: username) { [weak self] result in
+//            guard let self = self else { return }
+//            
+//            switch result {
+//            case .success(let user):
+//                DispatchQueue.main.async {
+//                    self.configureUIElements(with: user)
+//                }
+//            case .failure(let error):
+//                self.presentGFAlertOnMainThread(title: "Something went wrong", message: error.rawValue, buttonTitle: "Ok")
+//            }
+//        }
     }
     
     func configureScrollView(){
@@ -73,7 +84,7 @@ class UserInfoVC: UIViewController {
         self.add(childVC: GFUserinfoHeaderVC(user: user), to: self.headerView)
         self.add(childVC: GFRepoItemVC(user: user, delegate: self), to: self.itemViewOne)
         self.add(childVC: GFFollowerItemVC(user: user, delegate: self), to: self.itemViewTwo)
-        self.dateLabel.text = "Github since \(user.createdAt.convertToStringFormat(with: DateFormat.monthYear))"
+        self.dateLabel.text = "Github since \(user.createdAt.convertToStringFormat())"
     }
     
     
@@ -126,7 +137,7 @@ extension UserInfoVC:GFRepoItemVCDelegate{
     
     func didTapGitHubProfileButton(for user: User) {
         guard let url = URL(string: user.htmlUrl) else {
-            presentGFAlertOnMainThread(title: "Invalid URL", message: "The URL attached to this user is invalid.", buttonTitle: "Ok")
+            presentGFAlert(title: "Invalid URL", message: "The URL attached to this user is invalid.", buttonTitle: "Ok")
             return
         }
         presentSafariVC(with: url)
@@ -137,7 +148,7 @@ extension UserInfoVC:GFFollowerItemVCDelegate{
     
     func didTapGetFollowersButton(for user: User) {
         guard user.followers != 0 else{
-            presentGFAlertOnMainThread(title: "No Followers", message: "This user has no followers. What a shame. ", buttonTitle: "Ok")
+            presentGFAlert(title: "No Followers", message: "This user has no followers. What a shame. ", buttonTitle: "Ok")
             return
         }
         delegate.didRequestFollowers(for: user.login)
