@@ -3,11 +3,13 @@ Fully programmatic UI using UIKIt tto demonstrate GitHub public API.
 
 
 Features
+
 Search for any GitHub follower by username
 View follower's profile details
-Add a follower to favorites tab
-Remove a follower from favorites tab
+Add a follower to the favorites tab
+Remove a follower from the favorites tab
 Clean and user-friendly interface
+
 Light and Dark Mode
 Frameworks/Technologies
 UIKit
