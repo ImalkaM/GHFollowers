@@ -51,3 +51,9 @@ class GFButton: UIButton {
     }
     
 }
+
+#Preview{
+    let image = GFButton(backgroundColor: .red, title: "Okay", systemImageName: "calendar")
+    
+    return image
+}
